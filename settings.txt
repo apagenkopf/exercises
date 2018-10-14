@@ -1,0 +1,13 @@
+PROCEDURE O04  -  settings file for SPOS related queries of nautical data base vallues via nautical API
+
+format requirements for the settings file
+	- do not change the delimiter "|"
+	- do not change the setting names in the firsts column
+
+workDir       |         C:/pyscripts/spos/              |  containing the file with the location list
+inputFileName |         positionList.csv                |  with the locations and its times
+csvDelimiter  |         ,                               |  column delimiter in the csv input file
+colNames      |         n,lat,lon,time                  |  column names in the input file  -  the order needs to be constant only the strings could change
+decDelimiter  |         .                               |  decimal delimiter for the coordinats in case they are in dd
+coordFormat   |         dd                              |  format of the position coordinates (dd like 53.836 or dms like 53°50'12''N)
+timeFormat    |         %Y-%m-%d %H:%M                  |  in the input file
